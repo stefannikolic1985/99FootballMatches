@@ -10,42 +10,51 @@
 namespace MatchCenter {
     
     
-    public partial class home {
+    public partial class addMatchAwayTeam {
         
         /// <summary>
-        /// formHome control.
+        /// formAddMatchAwayTeam control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm formHome;
+        protected global::System.Web.UI.HtmlControls.HtmlForm formAddMatchAwayTeam;
         
         /// <summary>
-        /// ScriptManagerHome control.
+        /// ScriptManagerAddMatchHomeTeam control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.ScriptManager ScriptManagerHome;
+        protected global::System.Web.UI.ScriptManager ScriptManagerAddMatchHomeTeam;
         
         /// <summary>
-        /// btnDeleteMatch control.
+        /// UpdatePanelAddMatchAwayTeam control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnDeleteMatch;
+        protected global::System.Web.UI.UpdatePanel UpdatePanelAddMatchAwayTeam;
         
         /// <summary>
-        /// rptPages control.
+        /// txtAwayTeamName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptPages;
+        protected global::System.Web.UI.WebControls.TextBox txtAwayTeamName;
+        
+        /// <summary>
+        /// btnAwayTeamNext control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnAwayTeamNext;
     }
 }

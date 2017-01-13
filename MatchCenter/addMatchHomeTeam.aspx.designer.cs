@@ -10,42 +10,51 @@
 namespace MatchCenter {
     
     
-    public partial class home {
+    public partial class addmatch {
         
         /// <summary>
-        /// formHome control.
+        /// formAddMatchHomeTeam control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm formHome;
+        protected global::System.Web.UI.HtmlControls.HtmlForm formAddMatchHomeTeam;
         
         /// <summary>
-        /// ScriptManagerHome control.
+        /// ScriptManagerAddMatchHomeTeam control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.ScriptManager ScriptManagerHome;
+        protected global::System.Web.UI.ScriptManager ScriptManagerAddMatchHomeTeam;
         
         /// <summary>
-        /// btnDeleteMatch control.
+        /// UpdatePaneAddMatchHomeTeam control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnDeleteMatch;
+        protected global::System.Web.UI.UpdatePanel UpdatePaneAddMatchHomeTeam;
         
         /// <summary>
-        /// rptPages control.
+        /// txtHomeTeamName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptPages;
+        protected global::System.Web.UI.WebControls.TextBox txtHomeTeamName;
+        
+        /// <summary>
+        /// btnHomeTeamNext control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnHomeTeamNext;
     }
 }

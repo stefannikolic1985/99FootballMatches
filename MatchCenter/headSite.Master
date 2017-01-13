@@ -1,0 +1,89 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="headSite.master.cs" Inherits="MatchCenter.headSite" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>99footballmatches.com</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
+    <%--<script type="text/javascript" src="Scripts/global.js"></script>--%>
+    <script type="text/javascript" src="<%=Page.ResolveUrl("~/Scripts/global.js")%>"></script>
+    <script type="text/javascript"> var baseUrl = "<%= ResolveUrl("~/") %>";</script>
+    <script type="text/javascript" src="Scripts/jquery.cookie.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="StyleSheet.css" />
+    <%--<link rel="shortcut icon" type="~/favicon.icoimage/ico" href="http://miun-dsu2.azurewebsites.net/favicon.ico">--%>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="icon" type="image/gif" href="animated_favicon1.gif" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+
+
+    <div id="main-wrapper">
+   
+        <!--Navigation bar -->
+        <nav class="navbar navbar-inverse ">
+            <div class="container-fluid containerNav">
+
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href='<%=this.ResolveUrl("~/")%>'><img class="logoImg" src="/Images/logo.png" alt="logo"/></a></li>
+                   
+                </ul>
+                
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" style="cursor: default;" class="a-no-change">
+                            <asp:Label ID="LabelName" runat="server" Text=""></asp:Label>
+                           
+                        </a>
+                    </li>
+                    <li>
+                        <asp:HyperLink ID="LoginCreate" runat="server" href="registration">
+                      Sign up
+                        </asp:HyperLink>
+                    </li>
+                    <li>
+                        <asp:HyperLink ID="LoginCreate2" runat="server" href="#">
+                        </asp:HyperLink>
+                    </li>
+                    <li>
+                        <asp:HyperLink ID="LoginLogout" runat="server" href="#">
+                      Login
+                        </asp:HyperLink>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    
+    <%--<!-- Local navigation -->
+        <div id="MinaSidor" class="localNavigation">
+            <ul>
+                <li><asp:HyperLink ID="NavMinaSidor" runat="server" href="minasidor.aspx">Mina sidor</asp:HyperLink></li>
+                <li><asp:HyperLink ID="NavBooking" runat="server" href="booking.aspx">Boka bana</asp:HyperLink></li>
+                <li><asp:HyperLink ID="NavTournamentmembadd" runat="server" href="tournamentmembadd.aspx">Alla tävlingar</asp:HyperLink></li>    
+            </ul>
+        </div>--%>
+
+
+   <%-- <asp:Panel ID="PanelHidden" runat="server"></asp:Panel>--%>
+    
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
+     
+    <div class="container" id="DivContainer">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+    </div>
+    <!-- Footer-->
+    <div id="copyright" class="containerFooter">
+        <p>&copy; 99footballmatches.com. All rights reserved.  <span class="designLicenss">  | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>. </span></p>
+    </div>
+        </div>
+</body>
+</html>
